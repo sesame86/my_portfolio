@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+	<title>김예은 Portfolio</title>
+	<style type="text/css">
+		.wrap{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div>
+	    	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top align-items-center" style="margin: 0px; opacity: 85%">
+			  <a class="navbar-brand align-items-center" href="#">Portfolio</a>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto">
+			      <li class="nav-item active">
+			        <a class="nav-link" href="#">소개 <span class="sr-only">(current)</span></a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Project</a>
+			      </li>
+			    </ul>
+			  </div>
+			</nav>
+		</div>
+	</header>
+
+	<div class="wrap">
+		<div class="jumbotron p-4 p-md-5 text-black rounded bg-dark" style=" background-image: url('image/jumbotron_image.PNG'); width: 1400px; height: 500px; margin-top: 50px">
+		    <div class="col-md-6 px-0 text-muted text-left">
+		      <h1 class="display-4 font-italic">Portfolio</h1>
+		      <p class="lead my-3">안녕하세요 </p>
+		      <p class="lead my-3">여러 가지 사회문제를 해결할 수 있는</p>
+		      <p  class="lead my-3">데이터 분석에 흥미를 가지고 탐구하길 좋아하는</p>
+		      <p  class="lead my-3">데이터 엔지니어 꿈나무입니다.</p>
+		    </div>
+		</div>
+	</div>
+
+
+	  <div class="wrap">
+	  	<div class="card row-cols-1" style="max-width: 540px;">
+		  <div class="row no-gutters">
+		    <div class="col-md-4">
+		      <img src="image/me.jpg" class="card-img" alt="...">
+		    </div>
+		    <div class="col-md-8">
+		      <div class="card-body">
+		        <h5 class="card-title">김예은</h5>
+		        <p class="card-text">
+					1998.08.06</p>
+					<p>email : kyy8006@naver.com</p>
+					<p><a href="https://github.com/sesame86?tab=repositories">GitHub</a>
+				</p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+	<div class="wrap" style="margin: 0px 100px 0px 100px">
+	  <main class="bd-content p-5" id="content" role="main">
+	  <h2 id="custom-components">Project</h2>
+
+	    <div class="row">
+	      <div class="col-md-4">
+	        <a href="/docs/4.5/examples/album/">
+	          <img class="img-thumbnail mb-3" src="image/rec_main.PNG" alt="movie_recommend" loading="lazy">
+	          <h5 class="mb-1">영화 추천 시스템</h5>
+	        </a>
+	        <p class="text-muted">사용자 기반 협업 필터링을 이용한 영화 추천 시스템</p>
+	      </div>
+	    
+	      <div class="col-md-4">
+	        <a href="/docs/4.5/examples/pricing/">
+	          <img class="img-thumbnail mb-3" src="image/arg_main.PNG" alt="price_predict" loading="lazy">
+	          <h5 class="mb-1">농산물 가격 예측</h5>
+	        </a>
+	        <p class="text-muted">시계열 데이터 분석을 통한 가격 예측</p>
+	      </div>
+	    
+	      <div class="col-md-4">
+	        <a href="/docs/4.5/examples/checkout/">
+	          <img class="img-thumbnail mb-3" src="image/news_main.PNG" alt="news_data" loading="lazy">
+	          <h5 class="mb-1">뉴스 데이터 분류</h5>
+	        </a>
+	        <p class="text-muted">자연어 처리 분석</p>
+	      </div>
+	  </div>
+	</main>
+</div>
+</body>
+</html>
