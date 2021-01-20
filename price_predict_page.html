@@ -80,12 +80,12 @@
 		<h2><a href="https://github.com/sesame86/agricultural_products_price_forecast">농산물 가격 예측 분석🥗</a></h2>
 		<p>2020/09~2020/12</p>
 		<p>
-			<a href="https://github.com/sesame86/agricultural_products_price_forecast"><img src="../image/git_logo.png"> GitHub</a>
+			<a href="https://github.com/sesame86/agricultural_products_price_forecast"><img src="../my_portfolio/image/git_logo.png"> GitHub</a>
 		</p>
 		<hr>
 		<p>LSTM을 이용한 농산물 가격 예측</p>
 
-		<div id="jumbotron" class="jumbotron p-4 p-md-5 text-black rounded bg-light" style=" background: url('../image/arg_main.PNG')no-repeat center; background-size: contain; height: 400px;margin-top: 15px">
+		<div id="jumbotron" class="jumbotron p-4 p-md-5 text-black rounded bg-light" style=" background: url('../my_portfolio/image/arg_main.PNG')no-repeat center; background-size: contain; height: 400px;margin-top: 15px">
 		</div>
 		<hr>
 		<h3 style="margin-top: 20px">문제 인식</h3>
@@ -141,26 +141,26 @@
 		<h3 style="margin-top: 20px">1. EDA를 통한 변수 선택</h3>
 		<ul>
 			<li>날씨와 생산량의 상관관계</li>
-			<img src="../image/output_temp.PNG" style="width: 600px"><br><br>
+			<img src="../my_portfolio/image/output_temp.PNG" style="width: 600px"><br><br>
 			<h6>사과와 대파는 날씨와 상관관계를 보였지만, 양파는 날씨와 상관관계를 보이지 않았습니다.</h6><br>
 			<ul>
 				<li>사과 🍎</li>
-				<img src="../image/apple_cor_plot.PNG" style="width: 1200px">
+				<img src="../my_portfolio/image/apple_cor_plot.PNG" style="width: 1200px">
 				<ul>
 					<li>사과는 농작업 일정표와 Prophet을 이용하여 분석한 결과를 통해 후지 사과는 9월 말에서 10월 초에 수확을 하기 때문에 10, 11, 12, 1월의 후지 사과의 가격이 낮은 것을 알 수 있습니다.</li>
 					<li>이를 이용하여 당해연도 상관관계를 분석할 때는 10, 11, 12, 1월의 가격데이터를, 전년도 상관관계를 분석할 때는 2, 3, 4, 5, 6, 7, 8, 9월의 가격데이터를 이용했습니다.</li>
 					<li>분석 결과 전년도 사과 생산량과 가격의 상관관계, 당해년 사과 생산량과 가격의 상관관계 모두 높은 상관관계를 보임을 알 수 있습니다.</li><br>
 				</ul>
 				<li>양파 🧅</li>
-				<img src="../image/onion_cor_plot.PNG" style="width: 1200px">
-				<img src="../image/onion_export_cor.png" style="width: 150px">
+				<img src="../my_portfolio/image/onion_cor_plot.PNG" style="width: 1200px">
+				<img src="../my_portfolio/image/onion_export_cor.png" style="width: 150px">
 				<ul>
 					<li>양파는 6, 7월에 수확을 하기 때문에 Prophet 그래프로 시각화한 자료를 보면 6월부터 양파의 가격이 떨어지는 것을 확인할 수 있습니다.</li>
 					<li>이를 이용하여 당해년 상관관계를 분석할 때는 7, 8, 9월 가격데이터를, 전년도 상관관계를 분석할 때는 3, 4, 5월의 가격데이터를 이용하였습니다.</li>
 					<li>분석 결과 전년도 생산량보다 당해년의 생산량과 가격데이터의 상관관계가 더 높게 나왔습니다.</li><br>
 				</ul>
 				<li>대파 🥬</li>
-				<img src="../image/greenonion_cor_plot.PNG" style="width: 800px">
+				<img src="../my_portfolio/image/greenonion_cor_plot.PNG" style="width: 800px">
 				<ul>
 					<li>대파는 11월과 6, 7월에 수확을 하기 때문에 Prophet 그래프로 시각화한 자료를 보면 6개월마다 대파가 공급되기 때문에 9월 빼고는 평이한 가격을 이루고 있는 것을 확인할 수 있습니다.</li>
 					<li>이를 이용하여 당해년 상관관계를 분석할 때는 11, 12, 6, 7월 가격데이터를, 전년도 상관관계를 분석할 때는 1, 2, 3, 4, 5, 8, 9, 10월의 가격데이터를 이용하였습니다.</li>
@@ -200,20 +200,20 @@
 			<ul>
 				<h6>- Weekly에서 토요일과 일요일의 가격이 낮은 것은 가격이 낮은 게 아니라 토요일과 일요일은 거래를 하지 않는 날이기 때문입니다.</h6>
 				<li>사과 🍎</li>
-				<img src="../image/apple_prophet.png" style="width: 400px">
+				<img src="../my_portfolio/image/apple_prophet.png" style="width: 400px">
 				<ul>
 					<li>사과는 2012년에 가격이 가장 높았고, 1년 중 10월에 가격이 가장 높은 것을 알 수 있습니다.</li>
 					<li>사과의 가격이 2012년에 가장 높았던 이유는 장기저장에 영향으로 출하량은 꾸준히 감소하고 있으나, 제수용품 등의 소비는 일정하여 오름세를 보였기 때문이라고 kamis의 정보를 이용하여 추측해볼 수 있습니다.</li>
 					<li>1년 중 10월에 가장 가격이 높은 이유는 추석 성수기를 맞아 출하량이 늘었기 때문으로 추측해볼 수 있습니다.</li>
 				</ul>
 				<li>양파 🧅</li>
-				<img src="../image/onion_prophet.png" style="width: 400px">
+				<img src="../my_portfolio/image/onion_prophet.png" style="width: 400px">
 				<ul>
 					<li>양파의 가격은 연도마다 변동이 컸고, 1년 중에는 상반기에 가격이 더 높은 것을 알 수 있습니다.</li>
 					<li>양파의 가격이 상반기에 더 높은 이유는 양파의 수확기가 6,7월 달이기 때문에 산지 저장 양파의 보관 물량이 감소하는 가운데 장기 보관에 따른 상승과 산지 출하량 조절로 오름세로 거래된다고 kamis의 정보를 이용하여 추측해 볼 수 있습니다.</li>
 				</ul>
 				<li>대파 🥬</li>
-				<img src="../image/greenonion_prophet.png" style="width: 400px">
+				<img src="../my_portfolio/image/greenonion_prophet.png" style="width: 400px">
 				<ul>
 					<li>대파의 가격은 연도마다 변동이 컸고, 1년 중 10월에 가장 가격이 높은 것을 알 수 있습니다.</li>
 					<li>대파의 가격이 10월에 높은 이유는 상품성이 좋은 강원지역의 고랭지 대파가 본격적으로 출하되고 있는 가운데, 고온 및 잦은 비로 인해 출하물량이 감소하여 오름세를 형성한 것을 kamis의 정보를 이용하여 추측해 볼 수 있습니다.</li>
@@ -227,20 +227,20 @@
 		<p>오른쪽 plot은 test 데이터를 학습시켜 예측한 값으로 <b><font style="color: #4374D9;"> 파란색 선</font></b>이 실제 가격 데이터이고, <b><font style="color: orange;"> 주황색</font></b> 선이 예측 가격 데이터입니다.</p>
 		<ul>
 			<li>사과 🍎</li>
-			<img src="../image/apple_lstm.PNG" style="width: 700px">
-			<img src="../image/apple_score.png" style="width: 300px; border: 3px solid;">
+			<img src="../my_portfolio/image/apple_lstm.PNG" style="width: 700px">
+			<img src="../my_portfolio/image/apple_score.png" style="width: 300px; border: 3px solid;">
 			<ul>
 				<li>시각화해서 확인해보면 예측이 200일부터 시간이 지날수록 어긋나고 있지만, 나머지 부분에서는 가격의 트렌드를 따라가는 것을 확인할 수 있습니다.</li>
 			</ul>
 			<li>양파 🧅</li>
-			<img src="../image/onion_lstm.PNG" style="width: 700px">
-			<img src="../image/onion_score.png" style="width: 300px; border: 3px solid;">
+			<img src="../my_portfolio/image/onion_lstm.PNG" style="width: 700px">
+			<img src="../my_portfolio/image/onion_score.png" style="width: 300px; border: 3px solid;">
 			<ul>
 				<li>시각화해서 확인해보면 예측이 어느 한 부분에서 좀 어긋난 부분이 있지만 나머지 부분에서는 가격의 트렌드를 따라가는 것을 확인할 수 있습니다.</li>
 			</ul>
 			<li>대파 🥬</li>
-			<img src="../image/greenonion_lstm.PNG" style="width: 700px">
-			<img src="../image/greenonion_score.PNG" style="width: 300px; border: 3px solid;">
+			<img src="../my_portfolio/image/greenonion_lstm.PNG" style="width: 700px">
+			<img src="../my_portfolio/image/greenonion_score.PNG" style="width: 300px; border: 3px solid;">
 			<ul>
 				<li>시각화해서 확인해보면 예측이 사과의 가격 예측 처럼 200일부터 시간이 지날수록 어긋나고 있지만, 나머지 부분에서는 가격의 트렌드를 따라가는 것을 확인할 수 있습니다.</li>
 			</ul>
@@ -252,7 +252,7 @@
 	<div class="wrap">
 		<footer>
 			<div class="wrap" style="margin-top: 70px">
-				<a href="https://github.com/sesame86/my_portfolio"><img src="../image/sesame.png" style="width: 30px"></a>
+				<a href="https://github.com/sesame86/my_portfolio"><img src="../my_portfolio/image/sesame.png" style="width: 30px"></a>
 				
 			</div>
 			<div class="wrap">
