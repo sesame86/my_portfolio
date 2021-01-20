@@ -59,6 +59,21 @@
 			box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
 		}
 	</style>
+	<script type="text/javascript">
+		function onClickHome() {
+            $(location).attr('href', '/');
+        }
+		function onClickMovie() {
+            $(location).attr('href', '/movie_recommend');
+        }
+        function onClickPrice() {
+            $(location).attr('href', '/price_predict');
+        }
+        function onClickNews() {
+            $(location).attr('href', '/news');
+        }
+
+	</script>
 </head>
 <body>
 	<header>
@@ -68,7 +83,10 @@
 			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			    <ul class="navbar-nav mr-auto">
 			      <li class="nav-item active">
-			        <a class="nav-link" href="#introduce">Introduce <span class="sr-only">(current)</span></a>
+			        <a class="nav-link" href="#" onclick="onClickHome()">Home <span class="sr-only">(current)</span></a>
+			      </li>
+					<li class="nav-item">
+			        <a class="nav-link" href="#about">About me</a>
 			      </li>
 			      <li class="nav-item">
 			        <a class="nav-link" href="#project">Project</a>
@@ -93,8 +111,8 @@
 	</div>
 
 
-	  <div class="wrap" style="margin-top: 30px">
-	  	<h1 id="introduce">Introduce</h1>
+	  <div class="wrap" style="margin-top: 30px" id="about">
+	  	<h1>About me</h1>
 	  </div>
 	  <div class="wrap" style="margin-top: -80px">
 	  	<div id="profile" class="card row-cols-1" style="max-width: 600px; margin: 100px 0px 100px 0px;">
@@ -133,7 +151,7 @@
 
 	    <div class="row">
 	      <div id="card" class="col-md-4">
-	        <a href="movie_recommend_page.html">
+	        <a href="#" onclick="onClickMovie()">
 	          <img class="img-thumbnail mb-3" src="../image/rec_main.PNG" alt="movie_recommend" loading="lazy">
 	          <h5 class="mb-1">영화 추천 시스템</h5>
 	        </a>
@@ -141,7 +159,7 @@
 	      </div>
 	    
 	      <div id="card" class="col-md-4">
-	        <a href="price_predict_page.html">
+	        <a href="#" onclick="onClickPrice()">
 	          <img class="img-thumbnail mb-3" src="../image/arg_main.PNG" alt="price_predict" loading="lazy">
 	          <h5 class="mb-1">농산물 가격 예측</h5>
 	        </a>
@@ -149,7 +167,7 @@
 	      </div>
 	    
 	      <div id="card" class="col-md-4">
-	        <a href="news_page.html">
+	        <a href="#" onclick="onClickNews()">
 	          <img class="img-thumbnail mb-3" src="../image/news_main.png" alt="news_data" loading="lazy">
 	          <h5 class="mb-1">뉴스 데이터 분류</h5>
 	        </a>
