@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+	<title>김예은 Portfolio</title>
+	<style type="text/css">
+		body{
+			font-family: 'Noto Sans KR', sans-serif;
+		}
+		.wrap{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		a{
+			color: black;
+		}
+		a:hover {
+			color: #FAC3BE;
+			background-color: transparent;
+			text-decoration: none;
+		}
+		#jumbotron{
+			box-shadow: 0 5px 5px #888;
+		}
+		.container-size{
+			width: 1000px;
+			margin-left: 20%;
+			margin-right: 20%;
+		}
+		#user_info{
+			position: absolute;
+			right: 350px;
+			top: 230px;
+		}
+		ul{
+			margin-top: 10px;
+		}
+		footer {
+			width: 100%;
+			height: 200px;
+			clear: both;
+			background: #bfd3d1;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div>
+	    	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top align-items-center" style="margin: 0px; opacity: 85%">
+			  <a class="navbar-brand align-items-center" href="#">Yeeun K</a>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto" style="margin-top: 0px">
+			      <li class="nav-item">
+			        <a class="nav-link" href="main_page.html">Home <span class="sr-only">(current)</span></a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="project_page.html">Project</a>
+			      </li>
+			    </ul>
+			  </div>
+			</nav>
+		</div>
+	</header>
+
+
+	<div class="container-size" style="margin-top: 200px;">
+		<h2><a href="https://github.com/sesame86/News-Data-Classification-Analysis">뉴스데이터 예측 분류📰</a></h2>
+		<p>2020/05~2020/06</p>
+		<p>
+			<a href="https://github.com/sesame86/News-Data-Classification-Analysis"><img src="../image/git_logo.png"> GitHub</a>
+		</p>
+		<hr>
+		<p>여러가지 예측 분류 방법을 이용한 뉴스 데이터 참 거짓 예측</p>
+
+		<div id="jumbotron" class="jumbotron p-4 p-md-5 text-black rounded bg-light" style=" background-image: url('https://www.niemanlab.org/images/ghosting-the-news-margaret-sullivan-700x410.jpeg'); background-size: cover; height: 400px;margin-top: 15px">
+		</div>
+
+		<h3 style="margin-top: 20px">문제 인식</h3>
+		<p>디지털 형태의 의사소통을 통해 전파되는 오보 등의 허위사실인 가짜 뉴스가 소셜 미디어를 통해 유통된 결과 큰 사회적 문제를 가져왔기 때문에 뉴스 데이터의 참 거짓을 분류하는 분석을 진행했습니다.</p>
+		<h3 style="margin-top: 20px">프로젝트 구조</h3>
+		<ol>
+			<li>데이터 전처리</li>
+			<li>분류 분석</li>
+			<ul>
+				<li>Logistic Regression Classifier</li>
+				<li>Support Vector Classifier</li>
+				<li>Multinomial Naive Bayes Classifier</li>
+				<li>Bernoulli Naive Bayes Classifier</li>
+				<li>Gradient Boost Classifier</li>
+				<li>XGBoost Classifier</li>
+				<li>Decision Tree</li>
+				<li>Random Forest Classifier</li>
+				<li>KNN Classifier</li>
+			</ul>
+		</ol>
+		<hr>
+		<h3 style="margin-top: 20px">사용한 데이터</h3>
+		<ul>
+			<li><a href="https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset">캐글 분석 대회의 뉴스데이터 csv파일을 이용했습니다.</a></li>
+		</ul><br>
+
+
+		<h3 style="margin-top: 20px">1. 데이터 전처리(클리닝)</h3>
+		<ul>
+			<li>영문자 이외 문자 공백으로 전환</li>
+			<li>소문자 변환</li>
+			<li>불용어 제거</li>
+			<li>공백으로 구분된 문자열로 결합하여 결과 반환</li>
+			<img src="../image/data_cleaning.PNG" style="width: 600px">
+		</ul><br>
+
+		<h3 style="margin-top: 20px">2. 분류 분석</h3>
+		<h6>연속적인 함수를 실행시킬 수 있는 pipeline을 이용해 combine컬럼을 벡터화 시킨후, 역문서 빈도를 적용하고, 모델을 적용하였습니다.</h6>
+		<img src="../image/model_score.PNG">
+		<h6 style="margin-top: 10px"><b>Decision Tree 모델의 정확도가 가장 높게 나왔습니다.</b></h6><br>
+
+		<h3 style="margin-top: 20px">3. Decision Tree 평가</h3>
+		<ul>
+			<h4><b>- 과적합 확인</b></h4>
+			<li>훈련용 모델은 99.91%이고, 테스트용 모델은 99.58%로 큰 차이를 보이지 않아서 과대적합이 아닌 것을 알 수 있습니다.</li><br>
+			<img src="../image/overfitting.PNG" style="border:3px solid;"><br><br>
+			<h4><b>- 데이터 적용 평가</b></h4>
+			<li>잘못 분류된 데이터가 적은 것으로 보아 모델이 잘 작동하고 있습니다.</li>
+			<img src="../image/confusion_matrix.png">
+		</ul>
+	</div>
+	<div class="wrap">
+		<footer>
+			<div class="wrap" style="margin-top: 70px">
+				<a href="https://github.com/sesame86/my_portfolio"><img src="../image/sesame.png" style="width: 30px"></a>
+				
+			</div>
+			<div class="wrap">
+				<h6 style="padding-top: 20px">made by <a href="https://github.com/sesame86/my_portfolio">&nbsp;Sesame</a></h6>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
