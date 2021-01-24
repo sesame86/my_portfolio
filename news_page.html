@@ -97,7 +97,7 @@
 
 		<div id="jumbotron" class="jumbotron p-4 p-md-5 text-black rounded bg-light" style=" background-image: url('https://www.niemanlab.org/images/ghosting-the-news-margaret-sullivan-700x410.jpeg'); background-size: cover; height: 400px;margin-top: 15px">
 		</div>
-
+		<hr>
 		<h3 style="margin-top: 20px">문제 인식</h3>
 		<p>디지털 형태의 의사소통을 통해 전파되는 오보 등의 허위사실인 가짜 뉴스가 소셜 미디어를 통해 유통된 결과 큰 사회적 문제를 가져왔기 때문에 뉴스 데이터의 참 거짓을 분류하는 분석을 진행했습니다.</p>
 		<h3 style="margin-top: 20px">프로젝트 구조</h3>
@@ -115,6 +115,8 @@
 				<li>Random Forest Classifier</li>
 				<li>KNN Classifier</li>
 			</ul>
+			<li>모델 평가</li>
+			<li>결론</li>
 		</ol>
 		<hr>
 		<h3 style="margin-top: 20px">사용한 데이터</h3>
@@ -146,6 +148,10 @@
 			<li>잘못 분류된 데이터가 적은 것으로 보아 모델이 잘 작동하고 있습니다.</li>
 			<img src="../my_portfolio/image/confusion_matrix.png">
 		</ul>
+		<h3>4. 결론</h3>
+		<p>분석 결과 의사결정나무를 이용한 분류 모델의 정확도가 가장 높았기 때문에 의사결정나무 모델을 선정했습니다.<br>
+		모델의 과적합을 확인한 결과 훈련용 모델과 테스트용 모델의 정확도가 비슷했기 때문에 과적합이 아님을 확인할 수 있었고, confusion matrix를 이용하여 확인해본 결과 뉴스 진짜 뉴스와 가짜 뉴스를 잘 분류하고 있음을 확인할 수 있었습니다. <br>
+		뉴스 분류 분석 프로젝트를 통하여 자연어 처리에 대해서 공부할 수 있었고, 여러 가지  분류 모델에 대해서 공부할 수 있었습니다.</p>
 	</div>
 	<div class="wrap">
 		<footer>
