@@ -27,6 +27,11 @@
 			align-items: center;
 			justify-content: center;
 		}
+		.intro-size{
+			width: 65%;
+			margin-left: 20%;
+			margin-right: 15%;
+		}
 		.container-size{
 			width: 70%;
 			margin: 10% 15% 10% 15%;
@@ -58,6 +63,32 @@
 			transform: scale(1.03);
 			box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
 		}
+		.line-1{
+		    position: relative;
+		    top: 50%;  
+		    width: 24em;
+		    margin: 0 auto;
+		    border-right: 2px solid rgba(255,255,255,.75);
+
+		    text-align: center;
+		    white-space: nowrap;
+		    overflow: hidden;
+		    transform: translateY(-50%);    
+		}
+
+		/* Animation */
+		.anim-typewriter{
+		  animation: typewriter 4s steps(19) 1s 1 normal both,
+		             blinkTextCursor 500ms steps(19) infinite normal;
+		}
+		@keyframes typewriter{
+		  from{width: 0;}
+		  to{width: 12em;}
+		}
+		@keyframes blinkTextCursor{
+		  from{border-right-color: rgba(255,255,255,.75);}
+		  to{border-right-color: transparent;}
+		}
 	</style>
 </head>
 <body>
@@ -85,52 +116,51 @@
 	<div class="wrap">
 		<div class="jumbotron p-4 p-md-5 text-black rounded bg-dark" style=" background-image: url('../my_portfolio/image/jumbotron_image.PNG'); background-size: cover; width: 1800px; height: 550px; margin-top: 60px">
 		    <div class="col-md-6 px-0 text-muted text-center">
-		    	<br><br><br>
-		      <h4 class="font-italic" style="margin-bottom: 0">Yeeun's</h4>
-		      <h1 class="display-4 font-italic">Portfolio</h1>
-		      <p class="lead my-3">안녕하세요 </p>
-		      <p class="lead my-3">여러 가지 사회문제를 해결할 수 있는</p>
-		      <p  class="lead my-3">데이터 분석에 흥미를 가지고 탐구하길 좋아하는</p>
-		      <p  class="lead my-3">개발자입니다.</p>
+		    	<br><br><br><br><br>
+		    	<h1 style="font-size: 50px">안녕하세요</h1><br>
+		    	<p class="line-1 anim-typewriter" style="font-size: 50px">김예은의 포트폴리오입니다</p>
 		    </div>
 		</div>
 	</div>
-	  <div class="wrap" style="margin-top: 30px" id="about">
-	  	<h1>About me</h1>
+	  <div style="background-color: #F6F6F6;margin-top: 0px; padding-top: 2px; padding-bottom: 70px">
+	  	<div class="wrap" id="about">
+	  	<h1>Ab<font style="text-decoration:underline #bfd3d1">out</font> Me</h1>
 	  </div>
-	  <div class="wrap" style="margin-top: -80px">
-	  	<div id="profile" class="card row-cols-1" style="max-width: 600px; margin: 100px 0px 100px 0px;">
-		  <div class="row no-gutters">
-		    <div class="col-md-4" style="padding: 20px">
-		      <img src="../my_portfolio/image/me.jpg" class="card-img" style="border-radius: 15px">
-		    </div>
-		    <div class="col-md-8">
-		      <div class="card-body">
-		        <br><h5 class="card-title"><b>김예은</b></h5>
-		        <p class="card-text">
-					1998.08.06 &nbsp; (만 22세)</p>
-					<p>email : kyy8006@naver.com</p>
-					<a href="https://github.com/sesame86"><img src="../my_portfolio/image/git_logo.png" style="width: 25px"> GitHub</a>
-				</p>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-	</div>
-	<div class="wrap" style="margin-bottom: -100px">
-	  	<div id="profile" class ="card row-cols-1" style="width: 700px; ">
+	  <div class="intro-size" style="margin-top: 70px">
 		  <div class="row">
-		      <div class="card-body" style="padding: 30px 50px 30px 50px">
-		        <h5 class="card-title"><b>학력</b></h5>
-		        <p>2014.03~2017.02 &nbsp;&nbsp;&nbsp;&nbsp;용인 홍천고등학교 졸업</p>
-		        <p>2017.03~2021.08 &nbsp;&nbsp;&nbsp;&nbsp;강남대학교 데이터사이언스 전공 졸업 예정</p>
-		      </div>
-		  </div>
+		  	<div class="col-lg-2" style="padding: 20px;">
+		  		<h4 class="card-title"><b>프로필</b></h4><br>
+		      <img src="../my_portfolio/image/me.jpg" class="card-img">
+		    </div>
+		      <div class="col-lg-4">
+			      <div class="card-body">
+			        <br><br><br><h5 class="card-title"><b>김예은</b></h5>
+			        <p class="card-text">
+						1998.08.06 &nbsp; (만 22세)</p>
+						<p>address: 경기도 용인시 기흥구</p>
+						<p>phone : 010 - 3242 - 9520</p>
+						<p>email : kyy8006@naver.com</p>
+						<a href="https://github.com/sesame86"><img src="../my_portfolio/image/git_logo.png" style="width: 25px"> GitHub</a>
+					</p>
+			      </div>
+			    </div>
+			    <div class="col-lg-5">
+			      <div class="card-body">
+			      	<br><br><h4 class="card-title"><b>소개</b></h4>
+			        <p class="card-text">&nbsp;안녕하세요. <br>
+	여러 가지 사회문제를 해결할 수 있는 데이터 분석에 흥미를 가지고 탐구하길 좋아하는 개발자입니다.</p><br>
+			        <h4 class="card-title"><b>학력</b></h4>
+			        <p>2014.03~2017.02 &nbsp;&nbsp;&nbsp;&nbsp;용인 홍천고등학교 졸업</p>
+			        <p>2017.03~2021.08 &nbsp;&nbsp;&nbsp;&nbsp;강남대학교 데이터사이언스 전공 졸업 예정</p>
+			      </div>
+			    </div>
+		    </div>
 		</div>
-	</div>
-	<div class="container-size" id="project">
+	  </div>
+	  
+	<div class="container-size" id="project" style="margin-top: 70px">
 	  <main class="bd-content p-5" id="content" role="main">
-	  <h2 id="custom-components"><b>개인 프로젝트&nbsp;</b><img src="../my_portfolio/image/go_project_button.png" style="width: 100px"></h2>
+	  <h2 id="custom-components"><b>Pro<font style="text-decoration:underline #bfd3d1">ject</font>&nbsp;</b><img src="../my_portfolio/image/go_project_button.png" style="width: 100px"></h2>
 	  <p>다양한 기술을 학습하거나 간단한 문제를 해결하기 위한 프로젝트입니다</p><br>
 
 	    <div class="row">
