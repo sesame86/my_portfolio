@@ -1,12 +1,18 @@
 @font-face {
-	font-family: 'BMHANNAPro';
-	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
     font-family: 'GmarketSansMedium';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'CookieRunOTF-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'CookieRunOTF-Black';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Black00.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -60,10 +66,10 @@ footer {
     height: 900px;
 }
 .bold-text{
-	font-family: 'BMHANNAPro';
+	 font-family: 'CookieRunOTF-Bold';
 }
 .nav-style{
-	font-family: 'BMHANNAPro';
+	font-family: 'CookieRunOTF-Black';
 	font-size: 20px;
 	margin: -5px;
 	opacity: 85%;
