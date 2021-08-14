@@ -20,7 +20,10 @@ body {
 	font-family: 'GmarketSansMedium';
 }
 /*same*/
+
+/*@media (device-aspect-ratio: 100%)*/
 .wrap{
+	divice-width: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
