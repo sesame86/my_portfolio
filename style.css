@@ -16,6 +16,16 @@
     font-weight: normal;
     font-style: normal;
 }
+@media screen and (max-width: 767px){
+	* {
+		font-size: 10%;
+		device-width: 100%;
+	}
+	#dynamic{
+		position: relative;
+	   	font-size: 10%;
+	}
+}
 body {
 	font-family: 'GmarketSansMedium';
 }
@@ -23,7 +33,6 @@ body {
 
 /*@media (device-aspect-ratio: 100%)*/
 .wrap{
-	divice-width: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
