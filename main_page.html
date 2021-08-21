@@ -23,6 +23,25 @@
         <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet">
 
 	</head>
+	<style type="text/css">
+		h5 {
+			padding-top: 20%;
+		}
+		/*device size*/
+		@media screen and (max-width:  767px){
+			h5 {
+				padding-top: 0;
+			}
+		}
+		@media screen and (min-width:  768px) and (max-width: 959px){
+			h5 {
+				padding-top: 0;
+			}
+		}
+		@media screen and (min-width:  2000px){
+			
+		}
+	</style>
 	<body>
 		<header>
 			<div>
@@ -53,10 +72,10 @@
 		</header>
 		<!-- home -->
 			<div class="wrap" id="home">
-				<div class="main-content bold-text set-heigth">
+				<div class="main-content set-heigth">
 				    <div class="main-first">
 				    	<br><br><br><br><br>
-				    	<span id="dynamic" class="text"></span><span class="cursor">l</span>
+				    	<b><span id="dynamic" class="text"></span><span class="cursor">l</span></b>
 				    	<br>
 				    </div>
 				    <a href="#" id="gointro" class="goAboutbtn-position"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
@@ -67,30 +86,30 @@
 			<!-- about -->
 			<div class="set-heigth about-background">
 		  	<div class="main-container-size" id="about">
-		  		<div class="bd-content p-5" id="content" role="main">
-		  		<h1>Ab<font style="text-decoration:underline #bfd3d1">out</font> Me</h1>
+		  		<div class="bd-content" id="content" role="main">
+		  		<h1><b>Ab<font style="text-decoration:underline #bfd3d1">out</font> Me</b></h1>
 					<div class="row">
 			  		<div class="col-lg-2">
-			  			<h4 class="card-title bold-text"><b>프로필</b></h4><br>
+			  			<h4 class="card-title"><b>프로필</b></h4><br>
 			        <img src="../my_portfolio/image/me.jpg" class="card-img" >
 			    	</div>
 				    <div class="col-lg-4">
 					    <div class="card-body">
-					      <br><br><br><h5 class="card-title bold-text"><b>김예은</b></h5>
+					      <h5 class="card-title"><b>김예은</b></h5>
 					      <p class="card-text">
 									1998.08.06 &nbsp; (만 22세)</p>
 									<p>address: 경기도 남양주시 다산동</p>
 									<p>phone : 010 - 3242 - 9520</p>
 									<p>email : kyy8006@naver.com</p>
-									<a href="https://github.com/sesame86"><img src="../my_portfolio/image/git_logo.png" style="width: 25px"> GitHub</a>
+									<a href="https://github.com/sesame86" id="git"><img src="../my_portfolio/image/git_logo.png"> GitHub</a>
 								</p>
 					    </div>
 					  </div>
 					  <div class="col-lg-5">
 					    <div class="card-body">
-					      <br><br><h4 class="card-title bold-text"><b>소개</b></h4>
-					      <p class="card-text ">&nbsp;안녕하세요. <br>여러 가지 사회문제를 해결할 수 있는 데이터 분석에 흥미를 가지고 탐구하길 좋아하는 개발자입니다.</p><br>
-					      <h4 class="card-title bold-text"><b>학력</b></h4>
+					      <h4 class="card-title"><b>소개</b></h4>
+					      <p class="card-text ">&nbsp;안녕하세요. <br>여러 가지 사회문제를 해결할 수 있는 데이터 분석에 흥미를 가지고 탐구하길 좋아하는 개발자입니다.</p>
+					      <h4 class="card-title" id="history"><b>학력</b></h4>
 					      <p>2014.03~2017.02 &nbsp;&nbsp;&nbsp;&nbsp;용인 홍천고등학교 졸업</p>
 					      <p>2017.03~2021.08 &nbsp;&nbsp;&nbsp;&nbsp;강남대학교 데이터사이언스 전공<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;소프트웨어 복수전공 졸업 예정</p>
 					    </div>
@@ -105,31 +124,31 @@
 		  <!-- project -->
 		  <div class="set-heigth">
 		  	<div class="main-container-size" id="project">
-			  <div class="bd-content p-5" id="content" role="main">
-			  <h2 id="custom-components" class="bold-text"><b>Pro<font style="text-decoration:underline #bfd3d1">ject</font>&nbsp;</b><img src="../my_portfolio/image/go_project_button.png" style="width: 100px"></h2>
+			  <div class="bd-content" id="content" role="main">
+			  <h1 id="custom-components"><b>Pro<font style="text-decoration:underline #bfd3d1">ject</font>&nbsp;</b><img src="../my_portfolio/image/go_project_button.png" style="width: 10%"></h1>
 			  <p>다양한 기술을 학습하거나 간단한 문제를 해결하기 위한 프로젝트입니다</p><br>
 
 			    <div class="row">
 			      <div id="card" class="col-md-4">
 			        <a href="movie_recommend_page.html">
-			          <img class="img-thumbnail mb-3" src="../my_portfolio/image/rec_main.PNG" alt="movie_recommend" loading="lazy">
-			          <h5 class="mb-1 bold-text">영화 추천 시스템</h5>
+			          <img class="img-thumbnail" src="../my_portfolio/image/rec_main.PNG" alt="movie_recommend" loading="lazy">
+			          <p class="mb-1"><b>영화 추천 시스템</b></p>
 			        </a>
 			        <p class="text-muted">사용자 기반 협업 필터링을 이용한 영화 추천 시스템</p>
 			      </div>
 			    
 			      <div id="card" class="col-md-4">
 			        <a href="price_predict_page.html">
-			          <img class="img-thumbnail mb-3" src="../my_portfolio/image/arg_main.PNG" alt="price_predict" loading="lazy">
-			          <h5 class="mb-1 bold-text">농산물 가격 예측</h5>
+			          <img class="img-thumbnail" src="../my_portfolio/image/arg_main.PNG" alt="price_predict" loading="lazy">
+			          <p class="mb-1"><b>농산물 가격 예측</b></p>
 			        </a>
 			        <p class="text-muted">시계열 데이터 분석을 통한 가격 예측</p>
 			      </div>
 			    
 			      <div id="card" class="col-md-4">
 			        <a href="news_page.html">
-			          <img class="img-thumbnail mb-3" src="../my_portfolio/image/news_main.png" alt="news_data" loading="lazy">
-			          <h5 class="mb-1 bold-text">뉴스 데이터 분류</h5>
+			          <img class="img-thumbnail" src="../my_portfolio/image/news_main.png" alt="news_data" loading="lazy">
+			          <p class="mb-1"><b>뉴스 데이터 분류</b></p>
 			        </a>
 			        <p class="text-muted">자연어 처리 분석</p>
 			      </div>
@@ -143,7 +162,7 @@
 					
 				</div>
 				<div class="wrap">
-					<h6 style="padding-top: 20px">made by <a href="https://github.com/sesame86/my_portfolio">&nbsp;Sesame</a></h6>
+					<p style="padding: 20px;"><b>made by <a href="https://github.com/sesame86/my_portfolio">&nbsp;Sesame</a></b></p>
 				</div>
 			</footer>
 	</body>
