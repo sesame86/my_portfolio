@@ -5,7 +5,7 @@
 		<title>김예은 Portfolio</title>
 	 	<!-- Required meta tags -->
        	<meta charset="UTF-8">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -51,89 +51,92 @@
 				</nav>
 			</div>
 		</header>
-		<div class="wrap" id="home">
-			<div class="main-content bold-text">
-			    <div class="main-first">
-			    	<br><br><br><br><br>
-			    	<span id="dynamic" class="text"></span><span class="cursor">l</span>
-			    	<br>
-			    	<a href="#" id="gointro"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-down-circle introBtn-place" viewBox="0 0 16 16">
-  					<path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/></svg></a>
-			    </div>
+		<!-- home -->
+			<div class="wrap" id="home">
+				<div class="main-content bold-text set-heigth">
+				    <div class="main-first">
+				    	<br><br><br><br><br>
+				    	<span id="dynamic" class="text"></span><span class="cursor">l</span>
+				    	<br>
+				    </div>
+				    <a href="#" id="gointro" class="goAboutbtn-position"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+	  					<path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/></svg></a>
+				</div>
 			</div>
-		</div>
 
-		<div style="background-color: #F6F6F6; padding-top: 60px; padding-bottom: 70px;" id="about">
-		  	<div class="wrap bold-text">
-		  	<h1>Ab<font style="text-decoration:underline #bfd3d1">out</font> Me</h1>
-		</div>
-		<div class="intro-size wrap" style="margin-top: 70px">
-			<div class="row">
-			  	<div class="col-lg-2" style="padding: 20px;">
-			  		<h4 class="card-title bold-text"><b>프로필</b></h4><br>
+			<!-- about -->
+			<div class="set-heigth about-background">
+		  	<div class="main-container-size" id="about">
+		  		<div class="bd-content p-5" id="content" role="main">
+		  		<h1>Ab<font style="text-decoration:underline #bfd3d1">out</font> Me</h1>
+					<div class="row">
+			  		<div class="col-lg-2">
+			  			<h4 class="card-title bold-text"><b>프로필</b></h4><br>
 			        <img src="../my_portfolio/image/me.jpg" class="card-img" >
-			    </div>
-			    <div class="col-lg-4">
-				    <div class="card-body">
-				        <br><br><br><h5 class="card-title bold-text"><b>김예은</b></h5>
-				        <p class="card-text">
-							1998.08.06 &nbsp; (만 22세)</p>
-							<p>address: 경기도 남양주시 다산동</p>
-							<p>phone : 010 - 3242 - 9520</p>
-							<p>email : kyy8006@naver.com</p>
-							<a href="https://github.com/sesame86"><img src="../my_portfolio/image/git_logo.png" style="width: 25px"> GitHub</a>
-						</p>
-				      </div>
-				    </div>
-				    <div class="col-lg-5">
-				      <div class="card-body">
-				      	<br><br><h4 class="card-title bold-text"><b>소개</b></h4>
-				        <p class="card-text ">&nbsp;안녕하세요. <br>
-		여러 가지 사회문제를 해결할 수 있는 데이터 분석에 흥미를 가지고 탐구하길 좋아하는 개발자입니다.</p><br>
-				        <h4 class="card-title bold-text"><b>학력</b></h4>
-				        <p>2014.03~2017.02 &nbsp;&nbsp;&nbsp;&nbsp;용인 홍천고등학교 졸업</p>
-				        <p>2017.03~2021.08 &nbsp;&nbsp;&nbsp;&nbsp;강남대학교 데이터사이언스 전공 졸업 예정</p>
-				        
-				      </div>
-				    </div>
-			    </div>
+			    	</div>
+				    <div class="col-lg-4">
+					    <div class="card-body">
+					      <br><br><br><h5 class="card-title bold-text"><b>김예은</b></h5>
+					      <p class="card-text">
+									1998.08.06 &nbsp; (만 22세)</p>
+									<p>address: 경기도 남양주시 다산동</p>
+									<p>phone : 010 - 3242 - 9520</p>
+									<p>email : kyy8006@naver.com</p>
+									<a href="https://github.com/sesame86"><img src="../my_portfolio/image/git_logo.png" style="width: 25px"> GitHub</a>
+								</p>
+					    </div>
+					  </div>
+					  <div class="col-lg-5">
+					    <div class="card-body">
+					      <br><br><h4 class="card-title bold-text"><b>소개</b></h4>
+					      <p class="card-text ">&nbsp;안녕하세요. <br>여러 가지 사회문제를 해결할 수 있는 데이터 분석에 흥미를 가지고 탐구하길 좋아하는 개발자입니다.</p><br>
+					      <h4 class="card-title bold-text"><b>학력</b></h4>
+					      <p>2014.03~2017.02 &nbsp;&nbsp;&nbsp;&nbsp;용인 홍천고등학교 졸업</p>
+					      <p>2017.03~2021.08 &nbsp;&nbsp;&nbsp;&nbsp;강남대학교 데이터사이언스 전공<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;소프트웨어 복수전공 졸업 예정</p>
+					    </div>
+					  </div>
+					</div>
+				</div>
 			</div>
-			<a href="#" id="goproject"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-down-circle proBtn-place" viewBox="0 0 16 16">
+			<a href="#" id="goproject" class="goProjectbtn-position"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
   			<path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/></svg></a>
 		  </div>
-		<div class="main-container-size" id="project" style="margin-top: 70px">
-		  <main class="bd-content p-5" id="content" role="main">
-		  <h2 id="custom-components" class="bold-text"><b>Pro<font style="text-decoration:underline #bfd3d1">ject</font>&nbsp;</b><img src="../my_portfolio/image/go_project_button.png" style="width: 100px"></h2>
-		  <p>다양한 기술을 학습하거나 간단한 문제를 해결하기 위한 프로젝트입니다</p><br>
 
-		    <div class="row">
-		      <div id="card" class="col-md-4">
-		        <a href="movie_recommend_page.html">
-		          <img class="img-thumbnail mb-3" src="../my_portfolio/image/rec_main.PNG" alt="movie_recommend" loading="lazy">
-		          <h5 class="mb-1 bold-text">영화 추천 시스템</h5>
-		        </a>
-		        <p class="text-muted">사용자 기반 협업 필터링을 이용한 영화 추천 시스템</p>
-		      </div>
-		    
-		      <div id="card" class="col-md-4">
-		        <a href="price_predict_page.html">
-		          <img class="img-thumbnail mb-3" src="../my_portfolio/image/arg_main.PNG" alt="price_predict" loading="lazy">
-		          <h5 class="mb-1 bold-text">농산물 가격 예측</h5>
-		        </a>
-		        <p class="text-muted">시계열 데이터 분석을 통한 가격 예측</p>
-		      </div>
-		    
-		      <div id="card" class="col-md-4">
-		        <a href="news_page.html">
-		          <img class="img-thumbnail mb-3" src="../my_portfolio/image/news_main.png" alt="news_data" loading="lazy">
-		          <h5 class="mb-1 bold-text">뉴스 데이터 분류</h5>
-		        </a>
-		        <p class="text-muted">자연어 처리 분석</p>
-		      </div>
-		  </div>
-		</main>
-	</div>
-	<div class="wrap">
+		  <!-- project -->
+		  <div class="set-heigth">
+		  	<div class="main-container-size" id="project">
+			  <div class="bd-content p-5" id="content" role="main">
+			  <h2 id="custom-components" class="bold-text"><b>Pro<font style="text-decoration:underline #bfd3d1">ject</font>&nbsp;</b><img src="../my_portfolio/image/go_project_button.png" style="width: 100px"></h2>
+			  <p>다양한 기술을 학습하거나 간단한 문제를 해결하기 위한 프로젝트입니다</p><br>
+
+			    <div class="row">
+			      <div id="card" class="col-md-4">
+			        <a href="movie_recommend_page.html">
+			          <img class="img-thumbnail mb-3" src="../my_portfolio/image/rec_main.PNG" alt="movie_recommend" loading="lazy">
+			          <h5 class="mb-1 bold-text">영화 추천 시스템</h5>
+			        </a>
+			        <p class="text-muted">사용자 기반 협업 필터링을 이용한 영화 추천 시스템</p>
+			      </div>
+			    
+			      <div id="card" class="col-md-4">
+			        <a href="price_predict_page.html">
+			          <img class="img-thumbnail mb-3" src="../my_portfolio/image/arg_main.PNG" alt="price_predict" loading="lazy">
+			          <h5 class="mb-1 bold-text">농산물 가격 예측</h5>
+			        </a>
+			        <p class="text-muted">시계열 데이터 분석을 통한 가격 예측</p>
+			      </div>
+			    
+			      <div id="card" class="col-md-4">
+			        <a href="news_page.html">
+			          <img class="img-thumbnail mb-3" src="../my_portfolio/image/news_main.png" alt="news_data" loading="lazy">
+			          <h5 class="mb-1 bold-text">뉴스 데이터 분류</h5>
+			        </a>
+			        <p class="text-muted">자연어 처리 분석</p>
+			      </div>
+			  	</div>
+			  </div>
+			</div>
+		</div>
 		<footer>
 				<div class="wrap" style="margin-top: 70px">
 					<a href="https://github.com/sesame86/my_portfolio"><img src="../my_portfolio/image/sesame.png" style="width: 30px"></a>
@@ -143,7 +146,6 @@
 					<h6 style="padding-top: 20px">made by <a href="https://github.com/sesame86/my_portfolio">&nbsp;Sesame</a></h6>
 				</div>
 			</footer>
-	</div>
 	</body>
 	<script>
 		let content = "안녕하세요.\n김예은의 포트폴리오입니다."
