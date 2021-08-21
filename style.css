@@ -169,10 +169,15 @@ footer {
 }
 /*other page*/
 #jumbotron {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 20%;
+	margin: 4% 0;
 	box-shadow: 0 5px 5px #888;
 }
 .container-size {
-	width: 1000px;
+	width: 60%;
 	margin-left: 20%;
 	margin-right: 20%;
 }
@@ -212,17 +217,12 @@ footer {
 		width: 70%;
 		margin: auto;
 	}
-	.bd-content {
-		padding:  -100px;
-	}
+
 	#git {
 		font-size: 10px;
 	}
 	#git img{
 		width: 15px;
-	}
-	#history {
-		padding-top: 0;
 	}
 	.img-thumbnail {
 		width: 100%;
