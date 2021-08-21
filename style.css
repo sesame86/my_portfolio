@@ -179,9 +179,6 @@ footer {
 
 /*device size*/
 @media screen and (max-width:  767px){
-	h1 {
-		font-size: 80%;
-	}
 	b {
 		font-size: 70%;
 	}
@@ -214,7 +211,6 @@ footer {
 	.main-container-size {
 		width: 70%;
 		margin: auto;
-		padding-top: 0px;
 	}
 	.bd-content {
 		padding:  -100px;
