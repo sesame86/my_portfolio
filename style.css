@@ -180,8 +180,7 @@ footer {
 /*device size*/
 @media screen and (max-width:  767px){
 	h1 {
-		font-size: 60%;
-		margin: 0;
+		font-size: 80%;
 	}
 	b {
 		font-size: 70%;
@@ -203,9 +202,6 @@ footer {
 		animation: blink 0.8s infinite;
 		font-size: 2rem;
 	}
-	.col-lg-2 {
-		margin-top: 0;
-	}
 	.card-title {
 		margin: 0;
 	}
@@ -224,7 +220,7 @@ footer {
 		padding:  -100px;
 	}
 	#git {
-		font-size: 5px;
+		font-size: 10px;
 	}
 	#git img{
 		width: 15px;
