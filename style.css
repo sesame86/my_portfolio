@@ -180,15 +180,11 @@ footer {
 /*device size*/
 @media screen and (max-width:  767px){
 	h1 {
-		font-size: 15px;
+		font-size: 60%;
 		margin: 0;
 	}
-	p {
-		font-size: 10%;
-		margin-bottom: 0;
-	}
 	b {
-		font-size: 30%;
+		font-size: 70%;
 	}
 	svg {
 		width: 50%;
