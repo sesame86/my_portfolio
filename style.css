@@ -31,9 +31,12 @@ a {
 	color: black;
 }
 a:hover {
-	color: pink;
+	color: gray;
 	background-color: transparent;
 	text-decoration: none;
+}
+i {
+	font-size: 69px;
 }
 b {
 	font-family: 'CookieRunOTF-Bold';
