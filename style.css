@@ -22,11 +22,13 @@
 body {
 	font-family: 'GmarketSansMedium';
 }
+
 .wrap{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
+
 a {
 	color: black;
 }
