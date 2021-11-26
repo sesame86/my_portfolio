@@ -37,14 +37,20 @@
         <div>
             <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top align-items-center nav-style">
                 <div class="container-fluid">
-                    <img src="https://github.com/sesame86/my_portfolio/blob/main/image/logo.png?raw=true"
-                        style="width: 10%">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span></button>
+                    <a href="/my_portfolio/" id="logo"><img
+                            src="https://github.com/sesame86/my_portfolio/blob/main/image/logo.png?raw=true"></a>
+                    <div id="menuBtn"><i class="fas fa-bars"></i>
+                        <div id="menuToggle">
+                            <ul>
+                                <li><a href="#" id="nav-home">Home</a></li>
+                                <li><a href="#" id="nav-about">About me</a></li>
+                                <li><a href="#" id="nav-project">Project</a></li>
+                            </ul>
+                        </div>
+                    </div>
                     <!-- nav list -->
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav" style="margin-top: 0px">
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" id="nav-home" href="#">Home <span
                                         class="sr-only">(current)</span></a>
@@ -132,7 +138,7 @@
                 <p>다양한 기술을 학습하거나 간단한 문제를 해결하기 위한 프로젝트입니다</p><br>
                 <div class="cardCon">
                     <div class="card">
-                        <a href="#" onclick="prepare()">
+                        <a href="ldit.html">
                             <img src="image/ldit_main.PNG" alt="groupware" loading="lazy">
                             <p class="proTitle"><b>LDIT(그룹웨어)</b></p>
                             <p class="proContent">Spring framework를 이용하여 구현한 그룹웨어 사이트</p>
@@ -280,9 +286,6 @@
 
         }
     };
-    function prepare() {
-        alert("준비중입니다.");
-    }
 </script>
 
 </html>
