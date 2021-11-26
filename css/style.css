@@ -1,0 +1,312 @@
+/*structure*/
+.wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.set-container {
+    width: 100vw;
+    height: 100vh;
+}
+i {
+    font-size: 69px;
+}
+
+ul {
+    margin-top: 10px;
+}
+h1 {
+    font-size: 3rem;
+    margin: 3rem 0;
+}
+h4 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+h5 {
+    font-size: 1rem;
+}
+#about p {
+    font-size: 1rem;
+}
+.bd-content {
+    padding-top: 4%;
+}
+.goAboutbtn-position {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+}
+.goProjectbtn-position {
+    position: absolute;
+    left: 50%;
+}
+.goProjectbtn-position i,
+.goAboutbtn-position i {
+    font-size: 4rem;
+}
+.main-container-size {
+    width: 70%;
+    margin: auto;
+    padding-top: 10%;
+}
+
+/*home*/
+.main-content {
+    background: linear-gradient(217deg, rgba(235, 241, 240, 0.8), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgba(191, 211, 209, 0.8), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgba(191, 211, 209, 0.8), rgba(0, 0, 255, 0) 70.71%);
+    position: static;
+    width: 100%;
+}
+.main-first {
+    margin-top: 13rem;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+}
+#dynamic {
+    position: relative;
+    font-size: 5rem;
+}
+.cursor {
+    animation: blink 0.8s infinite;
+    font-size: 5rem;
+}
+@keyframes blink {
+    to {
+        opacity: 0;
+    }
+}
+
+/*about*/
+.about-background {
+    background-color: #f6f6f6;
+}
+#about {
+    width: 60%;
+    height: 90%;
+    margin: auto;
+    clear: both;
+    position: relative;
+}
+#about .content {
+    width: 100%;
+    height: 100%;
+    padding-top: 15%;
+}
+.aboutConLeft {
+    float: left;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.aboutConLeft a i {
+    font-size: 1.5rem;
+    margin-right: 0.4rem;
+}
+.leftProfile {
+    width: 100%;
+    height: 100%;
+}
+.leftProfile img {
+    width: 90%;
+    margin: 0 auto 0 0;
+    display: block;
+}
+.leftInfo {
+    width: 100%;
+}
+.aboutConRight {
+    float: left;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+.mg-left-3 {
+    margin-left: 2rem;
+}
+.mg-left-3 i {
+    font-size: 0.7rem;
+    margin-right: 0.4rem;
+}
+/*project*/
+#project {
+    width: 80%;
+    height: 90%;
+    margin: auto;
+    clear: both;
+}
+#project .content {
+    width: 100%;
+    height: 100%;
+    padding-top: 15%;
+    overflow: hidden;
+    position: relative;
+}
+.cardCon {
+    clear: both;
+    position: absolute;
+    width: 155rem;
+    height: 40%;
+    transition: left 0.5s ease-out;
+}
+.card {
+    float: left;
+    width: 31rem;
+    height: 100%;
+    border: 0;
+    border-radius: 0.3rem;
+}
+.card a {
+    width: 100%;
+    height: 70%;
+    color: black;
+}
+.proTitle {
+    margin: 0.5rem 0 0.5rem 1rem;
+}
+.proContent {
+    width: 90%;
+    height: 30%;
+    clear: both;
+    margin: auto;
+}
+.card img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    border: 0;
+    border-radius: 0.3rem;
+    display: block;
+    margin: auto;
+}
+.card img:hover {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.projectCon {
+    position: relative;
+}
+#prev {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+#next {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+}
+#prev i,
+#next i {
+    font-size: 3rem;
+}
+/*device size*/
+@media screen and (max-width: 767px) {
+    .main-first {
+        margin-top: 28rem;
+    }
+    #about {
+        width: 70%;
+        height: 90%;
+        margin: auto;
+        clear: both;
+    }
+    .aboutConLeft {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutConLeft a i {
+        font-size: 1.5rem;
+        margin-right: 0.4rem;
+    }
+    .leftProfile {
+        width: 100%;
+        height: 100%;
+    }
+    .leftProfile img {
+        width: 40%;
+        margin: auto;
+        display: block;
+    }
+    .leftInfo {
+        width: 100%;
+        margin: 2rem auto;
+        text-align: center;
+    }
+    .aboutConRight {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    /*project*/
+    #project {
+        width: 90%;
+        margin: auto;
+    }
+    #project .content {
+        overflow: visible;
+        width: 100%;
+        padding-top: 25%;
+    }
+    .cardCon {
+        clear: both;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .card {
+        width: 100%;
+    }
+    #prev,
+    #next {
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    #about {
+        width: 80%;
+    }
+    #project .content {
+        width: 40rem;
+        padding-top: 30%;
+        margin: auto;
+    }
+    .cardCon {
+        width: 100rem;
+    }
+    .card {
+        width: 20rem;
+        height: 60%;
+    }
+    #prev {
+        position: absolute;
+        top: 50%;
+        left: 12%;
+    }
+    #next {
+        position: absolute;
+        top: 50%;
+        right: 12%;
+    }
+}
+@media screen and (min-width: 960px) and (max-width: 1200px) {
+    #project {
+        width: 80%;
+    }
+    #project .content {
+        width: 50rem;
+        margin: auto;
+    }
+    .cardCon {
+        width: 85rem;
+    }
+    .card {
+        width: 17rem;
+        height: 60%;
+    }
+}
