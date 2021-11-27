@@ -42,9 +42,9 @@
                     <div id="menuBtn"><i class="fas fa-bars"></i>
                         <div id="menuToggle">
                             <ul>
-                                <li><a href="#" id="nav-home">Home</a></li>
-                                <li><a href="#" id="nav-about">About me</a></li>
-                                <li><a href="#" id="nav-project">Project</a></li>
+                                <li><a href="#" id="nav1-home">Home</a></li>
+                                <li><a href="#" id="nav1-about">About me</a></li>
+                                <li><a href="#" id="nav1-project">Project</a></li>
                             </ul>
                         </div>
                     </div>
@@ -233,7 +233,18 @@
             ev.preventDefault();
             document.getElementById('project').scrollIntoView({ behavior: "smooth", block: "start" })
         });
-
+        document.getElementById("nav1-home").addEventListener('click', function (ev) {
+            ev.preventDefault();
+            document.getElementById('home').scrollIntoView({ behavior: "smooth", block: "start" })
+        });
+        document.getElementById("nav1-about").addEventListener('click', function (ev) {
+            ev.preventDefault();
+            document.getElementById('about').scrollIntoView({ behavior: "smooth", block: "start" })
+        });
+        document.getElementById("nav1-project").addEventListener('click', function (ev) {
+            ev.preventDefault();
+            document.getElementById('project').scrollIntoView({ behavior: "smooth", block: "start" })
+        });
         //project 목록
         let slides = document.querySelector(".cardCon");
         let slide = document.querySelectorAll(".card");
