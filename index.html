@@ -190,102 +190,105 @@
             </p>
         </div>
     </footer>
+    <script>
+        let content = "안녕하세요.\n김예은의 포트폴리오입니다."
+        // 타이핑 하고싶은 텍스트 작성
+        const text = document.getElementById("dynamic");
+        let index = 0;
+        let txt = "";
+
+        function typing() {
+            if (index < content.length) {
+                txt += content[index];
+                text.innerText = txt;
+                index++
+            }
+        }
+        setInterval(typing, 200);
+
+        /*밑으로 버튼*/
+        let introBtn = document.getElementById("gointro"),
+            proBtn = document.getElementById("goproject"),
+            homeBtn = document.getElementById("nav-home"),
+            aboutBtn = document.getElementById("nav-about"),
+            projectBtn = document.getElementById("nav-project");
+
+        introBtn.addEventListener('click', function (ev) {
+            ev.preventDefault();
+            document.getElementById('about').scrollIntoView({ behavior: "smooth", block: "start" })
+        });
+        proBtn.addEventListener('click', function (ev) {
+            ev.preventDefault();
+            document.getElementById('project').scrollIntoView({ behavior: "smooth", block: "start" })
+        });
+        homeBtn.addEventListener('click', function (ev) {
+            ev.preventDefault();
+            document.getElementById('home').scrollIntoView({ behavior: "smooth", block: "start" })
+        });
+        aboutBtn.addEventListener('click', function (ev) {
+            ev.preventDefault();
+            document.getElementById('about').scrollIntoView({ behavior: "smooth", block: "start" })
+        });
+        projectBtn.addEventListener('click', function (ev) {
+            ev.preventDefault();
+            document.getElementById('project').scrollIntoView({ behavior: "smooth", block: "start" })
+        });
+
+        //project 목록
+        let slides = document.querySelector(".cardCon");
+        let slide = document.querySelectorAll(".card");
+        currentIdx = 0;
+        slideCount = slide.length;
+        prevBtn = document.getElementById("prev");
+        nextBtn = document.getElementById("next");
+
+        if (window.matchMedia("screen and (max-width: 768px)").matches) {
+        } else if (window.matchMedia("screen and (min-width: 768px) and (max-width: 959px)").matches) {
+            slideWidth = 20;
+            pageAmount = 2;
+        } else if (window.matchMedia("screen and (min-width: 960px) and (max-width: 1200px)").matches) {
+            slideWidth = 17;
+            pageAmount = 3;
+            slides.style.width = "85rem";
+        } else if (window.matchMedia("screen and (min-width: 1201px)").matches) {
+            slideWidth = 31;
+            pageAmount = 3;
+            slides.style.width = "155rem";
+        }
+
+        function moveSlide(num) {
+            slides.style.left = -num * slideWidth + 'rem';
+            currentIdx = num;
+        }
+        nextBtn.addEventListener('click', function (ev) {
+            ev.preventDefault();
+            nextBtnClick();
+        });
+        prevBtn.addEventListener('click', function (ev) {
+            ev.preventDefault();
+            prevBtnClick();
+        });
+        function nextBtnClick() {
+            if (currentIdx < slideCount - pageAmount) {
+                moveSlide(currentIdx + 1);
+                console.log(currentIdx);
+            } else {
+                moveSlide(0);
+            }
+        };
+        function prevBtnClick() {
+            if (currentIdx > 0) {
+                moveSlide(currentIdx - 1);
+                console.log(currentIdx);
+            } else {
+                moveSlide(slideCount - pageAmount);
+
+            }
+        };
+        $("#menuBtn").on("click", function () {
+            $("#menuToggle").slideToggle(1000);
+        })
+    </script>
 </body>
-<script>
-    let content = "안녕하세요.\n김예은의 포트폴리오입니다."
-    // 타이핑 하고싶은 텍스트 작성
-    const text = document.getElementById("dynamic");
-    let index = 0;
-    let txt = "";
-
-    function typing() {
-        if (index < content.length) {
-            txt += content[index];
-            text.innerText = txt;
-            index++
-        }
-    }
-    setInterval(typing, 200);
-
-    /*밑으로 버튼*/
-    let introBtn = document.getElementById("gointro"),
-        proBtn = document.getElementById("goproject"),
-        homeBtn = document.getElementById("nav-home"),
-        aboutBtn = document.getElementById("nav-about"),
-        projectBtn = document.getElementById("nav-project");
-
-    introBtn.addEventListener('click', function (ev) {
-        ev.preventDefault();
-        document.getElementById('about').scrollIntoView({ behavior: "smooth", block: "start" })
-    });
-    proBtn.addEventListener('click', function (ev) {
-        ev.preventDefault();
-        document.getElementById('project').scrollIntoView({ behavior: "smooth", block: "start" })
-    });
-    homeBtn.addEventListener('click', function (ev) {
-        ev.preventDefault();
-        document.getElementById('home').scrollIntoView({ behavior: "smooth", block: "start" })
-    });
-    aboutBtn.addEventListener('click', function (ev) {
-        ev.preventDefault();
-        document.getElementById('about').scrollIntoView({ behavior: "smooth", block: "start" })
-    });
-    projectBtn.addEventListener('click', function (ev) {
-        ev.preventDefault();
-        document.getElementById('project').scrollIntoView({ behavior: "smooth", block: "start" })
-    });
-
-    //project 목록
-    let slides = document.querySelector(".cardCon");
-    let slide = document.querySelectorAll(".card");
-    currentIdx = 0;
-    slideCount = slide.length;
-    prevBtn = document.getElementById("prev");
-    nextBtn = document.getElementById("next");
-
-    if (window.matchMedia("screen and (max-width: 768px)").matches) {
-    } else if (window.matchMedia("screen and (min-width: 768px) and (max-width: 959px)").matches) {
-        slideWidth = 20;
-        pageAmount = 2;
-    } else if (window.matchMedia("screen and (min-width: 960px) and (max-width: 1200px)").matches) {
-        slideWidth = 17;
-        pageAmount = 3;
-        slides.style.width = "85rem";
-    } else if (window.matchMedia("screen and (min-width: 1201px)").matches) {
-        slideWidth = 31;
-        pageAmount = 3;
-        slides.style.width = "155rem";
-    }
-
-    function moveSlide(num) {
-        slides.style.left = -num * slideWidth + 'rem';
-        currentIdx = num;
-    }
-    nextBtn.addEventListener('click', function (ev) {
-        ev.preventDefault();
-        nextBtnClick();
-    });
-    prevBtn.addEventListener('click', function (ev) {
-        ev.preventDefault();
-        prevBtnClick();
-    });
-    function nextBtnClick() {
-        if (currentIdx < slideCount - pageAmount) {
-            moveSlide(currentIdx + 1);
-            console.log(currentIdx);
-        } else {
-            moveSlide(0);
-        }
-    };
-    function prevBtnClick() {
-        if (currentIdx > 0) {
-            moveSlide(currentIdx - 1);
-            console.log(currentIdx);
-        } else {
-            moveSlide(slideCount - pageAmount);
-
-        }
-    };
-</script>
 
 </html>
