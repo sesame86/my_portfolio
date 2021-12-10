@@ -2,4 +2,4 @@
 
 내 포트폴리오 사이트!
 
-https://sesame86.github.io/my_portfolio/main_page
+https://sesame86.github.io/my_portfolio/
